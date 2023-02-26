@@ -40,7 +40,7 @@
   let hidden = true;
   setInterval(() => {
         console.log("fytjtfh");
-      if (Cookies.get('fooo') == 'true') {
+      if (Cookies.get('beginning') == 'true') {
         hidden = false;
       }
   }, 1000);
@@ -72,7 +72,7 @@
 
   onMount(() => {
 
-    Cookies.set('fooo', 'false')
+    Cookies.set('beginning', 'false')
     // document.cookie = `view_hidden=false;max-age=604800;domain=localhost`;
     typeTitle();
   });

@@ -4,7 +4,7 @@
     <br>
     
     <div class="mb-3">
-          <h1 class="text-3xl font-bold">
+          <h1 id="tittle" class="text-3xl font-bold leading-normal">
             {@html title.slice(0, titleIndex)}
           </h1>
     </div>
@@ -23,11 +23,12 @@
 
   import Cookies from 'js-cookie';
   
-  let title = `Credible sources are essential in investigative journalism.<br/>
-        Obtaining information from trustworthy individuals is crucial to the accuracy of the story.<br/>
-        Omitting important details can undermine the credibility of the investigation Keeping meticulous notes is key when conducting interviews. <br/>
-        Investigative journalists must be persistent in their pursuit of the truth.<br/>
-        Eagle-eyed journalists pursue every lead in their investigation for the truth.
+  let title = `<aa>C</aa>redible sources are essential in investigative journalism.<br/>
+        <aa>O</aa>btaining information from trustworthy individuals is crucial to the accuracy of the story.<br/>
+        <aa>O</aa>mitting important details can undermine the credibility of the investigation.<br/>
+        <aa>K</aa>eeping meticulous notes is key when conducting interviews. <br/>
+        <aa>I</aa>nvestigative journalists must be persistent in their pursuit of the truth.<br/>
+        <aa>E</aa>agle-eyed journalists pursue every lead in their investigation for the truth.
      `;
 
   let titleIndex = 0;
@@ -66,7 +67,7 @@
       else{
         handleTypingFinished();
       }
-    }, 50);
+    }, 30);
   }
 
   onMount(() => {
@@ -76,3 +77,4 @@
     typeTitle();
   });
 </script>
+

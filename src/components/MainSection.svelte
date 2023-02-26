@@ -11,7 +11,7 @@
     {#if !hidden}
     <p>0x690B9A9E9aa1C9dB991C7721a92d351Db4FaC990</p>
     <a href="https://gentleman-restaurant.onrender.com">
-      <img width="200px" height="200px" alt="0x690B9A9E9aa1C9dB991C7721a92d351Db4FaC990" src="https://dmrqkbkq8el9i.cloudfront.net/Pictures/480xany/7/1/6/174716_lospolloshermanos_259386_crop.jpg"/>
+      <img width="200px" height="200px" alt="0x690B9A9E9aa1C9dB991C7721a92d351Db4FaC990" src="{testImage}"/>
     </a>
     {/if}
 </div>
@@ -19,6 +19,7 @@
 
 <script>
   import { onMount } from 'svelte';
+  import testImage from '../assets/test.png';
 
   import Cookies from 'js-cookie';
   
